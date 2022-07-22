@@ -1,0 +1,23 @@
+{
+  "name": "sprint-2-angular",
+  "version": "1.0.0",
+  "description": "Ejercicios del Sprint 2 de Angular en IT Academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rociomarchetti/Sprint-2-Angular.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rociomarchetti/Sprint-2-Angular/issues"
+  },
+  "homepage": "https://github.com/rociomarchetti/Sprint-2-Angular#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
