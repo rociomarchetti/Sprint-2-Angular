@@ -1,1 +1,23 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+$primary: #5265e1;
+$secondary: #fa5959;
+
+.nav-link {
+  color: $primary;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: $secondary;
+}
+
+.navbar-btn {
+  color: $primary;
+}
+
+.navbar-btn:hover {
+  color: $secondary;
+  background-color: var(--bs-btn-hover-bg);
+  border-color: $secondary;
+}

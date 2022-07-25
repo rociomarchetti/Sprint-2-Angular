@@ -10921,4 +10921,22 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.nav-link {
+  color: #5265e1;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #fa5959;
+}
+
+.navbar-btn {
+  color: #5265e1;
+}
+
+.navbar-btn:hover {
+  color: #fa5959;
+  background-color: var(--bs-btn-hover-bg);
+  border-color: #fa5959;
 }/*# sourceMappingURL=custom.css.map */
