@@ -1,0 +1,18 @@
+$primary: #5265e1;
+$secondary: #fa5959;
+
+#blue-shape {
+    height: 20em;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+#features-link {
+    color: grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid $secondary;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
