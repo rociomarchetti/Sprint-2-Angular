@@ -1,18 +1,78 @@
 $primary: #5265e1;
 $secondary: #fa5959;
 
+/* $container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) */
+
 #blue-shape {
-    height: 20em;
-    margin-top: 15%;
-    margin-left: 20%;
+  height: 20em;
+  margin-top: 15%;
+  margin-left: 20%;
 }
 
-#features-link {
-    color: grey;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid $secondary;
+@media all and (min-width: 720px) {
+
+    .navbar {
+        background-color: white;
+      }
+
+      .navbar-collapse {
+        justify-content: end;
+        background-color: white;
+      }
+        
+      .navbar a {
+        color: black;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    
+      .navbar button {
+        color: white;
+        width: 70px;
+        border-color: $secondary;
+        background-color: $secondary;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    
+}
+
+@media all and (max-width: 540px) {
+  .navbar {
+    background-color: #212529;
+    justify-content: center;
+  }
+  .navbar-collapse {
+    text-align: center;
+    font-size: larger;
+    background-color: #212529;
+  }
+
+  .navbar a {
+    color: whitesmoke;
+  }
+
+  .navbar button {
+    color: whitesmoke;
+    border-color: whitesmoke;
+  }
+
+  .navbar-brand {
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 150px;
+    background-color: #212529;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #212529;
+  }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
