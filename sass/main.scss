@@ -9,38 +9,55 @@ $secondary: #fa5959;
   xxl: 1320px
 ) */
 
-#blue-shape {
+.container {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.blue-shape {
   height: 20em;
-  margin-top: 15%;
-  margin-left: 20%;
+  width: 30em;
+  margin-top: 25%;
+  margin-left: 30%;
+  z-index: 0;
+}
+
+.ilustracion-header {
+  z-index: 1;
+}
+
+.imagen-header {
+  z-index: 3;
+}
+
+.texto-header {
+  z-index: 3;
 }
 
 @media all and (min-width: 720px) {
+  .navbar {
+    background-color: white;
+  }
 
-    .navbar {
-        background-color: white;
-      }
+  .navbar-collapse {
+    justify-content: end;
+    background-color: white;
+  }
 
-      .navbar-collapse {
-        justify-content: end;
-        background-color: white;
-      }
-        
-      .navbar a {
-        color: black;
-        margin-left: 40px;
-        margin-right: 40px;
-      }
-    
-      .navbar button {
-        color: white;
-        width: 70px;
-        border-color: $secondary;
-        background-color: $secondary;
-        margin-left: 40px;
-        margin-right: 40px;
-      }
-    
+  .navbar a {
+    color: black;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .navbar button {
+    color: white;
+    width: 70px;
+    border-color: $secondary;
+    background-color: $secondary;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
 @media all and (max-width: 540px) {
