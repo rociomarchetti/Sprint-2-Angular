@@ -22,73 +22,36 @@ $secondary: #fa5959;
   z-index: 0;
 }
 
+.header {
+  flex-direction: row;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .ilustracion-header {
   z-index: 1;
 }
 
 .imagen-header {
   z-index: 3;
+  float: right;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .texto-header {
   z-index: 3;
-}
-
-@media all and (min-width: 720px) {
-  .navbar {
-    background-color: white;
-  }
-
-  .navbar-collapse {
-    justify-content: end;
-    background-color: white;
-  }
-
-  .navbar a {
-    color: black;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  .navbar button {
-    color: white;
-    width: 70px;
-    border-color: $secondary;
-    background-color: $secondary;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
+  float: left;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 @media all and (max-width: 540px) {
-  .navbar {
-    background-color: #212529;
-    justify-content: center;
-  }
-  .navbar-collapse {
-    text-align: center;
-    font-size: larger;
-    background-color: #212529;
-  }
 
-  .navbar a {
-    color: whitesmoke;
-  }
-
-  .navbar button {
-    color: whitesmoke;
-    border-color: whitesmoke;
-  }
-
-  .navbar-brand {
-    height: 30px;
-    margin-top: 20px;
-    margin-left: 150px;
-    background-color: #212529;
-  }
-
-  .navbar-toggler-icon {
-    background-color: #212529;
+  .header {
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
