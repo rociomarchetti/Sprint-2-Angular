@@ -172,6 +172,21 @@ $secondary: #fa5959;
   margin-top: 5%;
   width: 15em;
 }
+
+.myCards {
+  display: flex;
+  flex-direction: row;
+  margin-left: 12em;
+  margin-right: 2em;
+}
+
+.card-2 {
+  margin-top: 5%;
+}
+
+.card-3 {
+  margin-top: 10%;
+}
 /* } */
 
 @media all and (max-width: 720px) {
@@ -285,6 +300,13 @@ $secondary: #fa5959;
     margin-top: 25%;
     margin-left: -10%;
     margin-right: 0%;
+  }
+
+  .myCards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7em;
+    margin-right: 2em;
   }
 }
 
