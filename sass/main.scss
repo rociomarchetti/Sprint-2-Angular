@@ -187,6 +187,18 @@ $secondary: #fa5959;
 .card-3 {
   margin-top: 10%;
 }
+
+.accordion {
+  flex-direction: column;
+  margin-left: 20em;
+  margin-bottom: 5%;
+}
+
+.accordion-btn {
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10%;
+}
 /* } */
 
 @media all and (max-width: 720px) {
@@ -307,6 +319,12 @@ $secondary: #fa5959;
     flex-direction: column;
     margin-left: 7em;
     margin-right: 2em;
+  }
+
+  .accordion {
+    flex-direction: column;
+    margin-left: 0em;
+    margin-bottom: 5%;
   }
 }
 
