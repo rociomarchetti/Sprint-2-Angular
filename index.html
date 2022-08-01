@@ -91,7 +91,7 @@
           blue-shape"></div>
       </div>
 
-      <div class="container-fluid col-sm-12 col-md-6 col-lg-4 order-lg-1 order-md-2 texto-header">
+      <div class="container-fluid col-12 col-md-6 col-lg-4 order-lg-1 order-md-2 texto-header">
         <h1 style="padding: 20px">A Simple Bookmark Manager</h1>
         <p style="padding: 20px">
           A clean and simple interface to organize your favourite websites.
@@ -124,59 +124,73 @@
     </div>
 
     <nav>
-      <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active" id="features-link-nab" data-toggle="tab" href="#features-link" role="tab"
+        <ul class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+          <li>
+            <a class="nav-item nav-link active" id="features-link-nab" data-toggle="tab" href="#features-link" role="tab"
           aria-controls="features-link" aria-selected="true">Simple Bookmarking</a>
-        <a class="nav-item nav-link" id="speedy-link-nab" data-toggle="tab" href="#speedy-link" role="tab"
-          aria-controls="speedy-link" aria-selected="false">Speedy
-          Searching</a>
-        <a class="nav-item nav-link" id="easy-link-nab" data-toggle="tab" href="#easy-link" role="tab"
-          aria-controls="easy-link" aria-selected="false">Easy
-          Sharing</a>
-      </div>
+          </li>
+          <li>
+            <a class="nav-item nav-link" id="speedy-link-nab" data-toggle="tab" href="#speedy-link" role="tab"
+            aria-controls="speedy-link" aria-selected="false">Speedy
+            Searching</a>
+          </li>
+          <li>
+            <a class="nav-item nav-link" id="easy-link-nab" data-toggle="tab" href="#easy-link" role="tab"
+            aria-controls="easy-link" aria-selected="false">Easy
+            Sharing</a>
+          </li>
+        </ul>
     </nav>
 
     <div class="tab-content" id="nav-tabContent">
 
       <div class="tab-pane fade show active" id="features-link" role="tabpanel" aria-labelledby="features-link-nab">
 
+      <div class="container mt-5 mb-5 features-content">
         <div class="row">
 
-          <div class="container col-sm-12 col-md-6 col-lg-6 order-lg-2
-            justify-content-center texto-features">
+          <div class="container-fluid col-12 col-md-6 col-lg-6 order-lg-1 order-sm-1
+            position-relative imagen-features-1">
+            <img class="position-absolute tab-1" src="/Imagenes/illustration-features-tab-1.svg"
+              alt="List of your favourites sites as they would look in Bookmark" />
+            <div class="bg-primary rounded-start rounded-pill blue-shape-features"></div>
+          </div>
+
+          <div class="container-fluid col-12 col-md-6 col-lg-5 order-lg-2 order-sm-2
+             texto-features">
             <h1>Bookmark in one click</h1>
             <p>
               Organize your bookmarks however you like. Our simple drag-and-drop
               interface gives you complete control over how you manage your
               favourite sites.
             </p>
-            <div>
+            <div class="container-fluid buttons col-md-12">
               <button class="btn btn-primary shadow p-3">Get it on Chrome</button>
               <button class="btn btn-light shadow p-3">Get it on Firefox</button>
             </div>
           </div>
 
-          <div class="container col-12 col-md-6 col-lg-6 order-lg-1
-            position-relative imagen-features-1">
-            <img class="position-absolute tab-1" src="/Imagenes/illustration-features-tab-1.svg"
-              alt="List of your favourites sites as they would look in Bookmark" />
-            <div class="bg-primary rounded-end rounded-pill
-              blue-shape"></div>
-          </div>
+          
+
         </div>
+
+      </div>
+
       </div>
 
       <div class="tab-pane fade" id="speedy-link" role="tabpanel" aria-labelledby="speedy-link-nab">
 
-        <div class="container col-12 col-md-6 col-lg-6 order-lg-1">
+        <div class="container col-12 col-md-6 col-lg-6 order-lg-1 tab-2">
           <img src="/Imagenes/illustration-features-tab-2.svg"
             alt="List of your favourites sites as they would look in Bookmark" />
         </div>
 
       </div>
-      <div class="tab-pane fade" id="easy-link" role="tabpanel" aria-labelledby="easy-link-nab">
+      <div class="tab-pane fade my-Tab" id="easy-link" role="tabpanel" aria-labelledby="easy-link-nab">
 
-        <img src="/Imagenes/illustration-features-tab-3.svg" alt="Drawing">
+        <div class="container col-12 col-md-6 col-lg-6 order-lg-1 tab-3">
+          <img src="/Imagenes/illustration-features-tab-3.svg" alt="Drawing">
+        </div>
       </div>
     </div>
 
@@ -390,7 +404,7 @@
   </footer>
   <!-- final Footer -->
 
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
   integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"

@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sprint 2</title>
     <link rel="stylesheet" href="/css/main.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -68,7 +81,8 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav" style="margin-right: 20%">
-            <li class="nav-item"><hr class="border-top" /></li>
+            <li>
+              <p></p>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#Features">FEATURES</a>
             </li>
@@ -238,7 +252,8 @@
     <nav>
       <div class="nav nav-tabs justify-content-center" id="nav-tab"
         role="tablist">
-        <a class="nav-item nav-link active" id="features-link-nab" data-toggle="tab"
+        <a class="nav-item nav-link active" id="features-link-nab"
+          data-toggle="tab"
           href="#features-link" role="tab" aria-controls="features-link"
           aria-selected="true">Simple Bookmarking</a>
         <a class="nav-item nav-link" id="speedy-link-nab" data-toggle="tab"
@@ -274,13 +289,13 @@
           </div>
 
           <div class="container col-12 col-md-6 col-lg-6 order-lg-1
-          position-relative imagen-features-1">
+            position-relative imagen-features-1">
             <img
               class="position-absolute tab-1"
               src="/Imagenes/illustration-features-tab-1.svg"
               alt="List of your favourites sites as they would look in Bookmark"
               />
-              <div
+            <div
               class="bg-primary rounded-end rounded-pill
               blue-shape"></div>
           </div>
@@ -292,19 +307,51 @@
       <div class="tab-pane fade" id="speedy-link" role="tabpanel"
         aria-labelledby="speedy-link-nab">
 
-        <img src="/Imagenes/illustration-features-tab-2.svg" alt="Drawing">
-      
+        <div class="container col-12 col-md-6 col-lg-6 order-lg-1">
+          <img
+            src="/Imagenes/illustration-features-tab-2.svg"
+            alt="List of your favourites sites as they would look in Bookmark"
+            />
+        </div>
+
       </div>
       <div class="tab-pane fade" id="easy-link" role="tabpanel"
         aria-labelledby="easy-link-nab">
-      
+
         <img src="/Imagenes/illustration-features-tab-3.svg" alt="Drawing">
-      
       </div>
     </div>
 
   </div>
   <!-- Features -->
+
+  <!--  pruebas -->
+  <div class="container" style="background-color: #eee;">
+    <div class="row">
+      <div class="col-8 justify-content-center">
+        <h1>
+          Bootstrap Tabs!</h1>
+        <ul class="nav nav-tabs" id="myTab">
+          <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+          <li><a href="#profile" data-toggle="tab">Profile</a></li>
+          <li><a href="#messages" data-toggle="tab">Messages</a></li>
+          <li><a href="#settings" data-toggle="tab">Settings</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="home">
+            <p>home</p>
+          </div>
+          <div class="tab-pane" id="profile">
+            <p>profile</p>
+          </div>
+          <div class="tab-pane" id="messages">
+            <p>messages</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- pruebas fin -->
 
   <div id="Pricing" class="container" style="margin-top: 80px">
     <div class="row mb-4">
@@ -457,6 +504,49 @@
       </div>
     </div>
   </div>
+
+  <!-- prueba accordion -->
+  <div class="accordion" id="accordionExample">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- final prueba accordion -->
 
   <!-- Prueba footer -->
   <footer class="bg-primary text-center text-white">
