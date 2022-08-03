@@ -27,11 +27,21 @@ $secondary: #fa5959;
   margin-right: 2em;
 }
 
+.myNavbar a:hover {
+  color: #fa5959;
+}
+
 .myNavbar button {
   background-color: #fa5959;
   color: white;
   padding-right: 7%;
   padding-left: 7%;
+}
+
+.myNavbar button:hover {
+  background-color: #ffffff;
+  border-color: #fa5959;
+  color: $secondary;
 }
 
 .modal-body a {
@@ -92,6 +102,12 @@ $secondary: #fa5959;
 
 .texto-header button {
   margin-right: 4%;
+}
+
+.texto-header button:hover {
+  background-color: white;
+  color: $primary;
+  border-color: $primary;
 }
 
 .nav-tabs {
@@ -173,6 +189,10 @@ $secondary: #fa5959;
   width: 15em;
 }
 
+#Features a:hover {
+  color: $secondary;
+}
+
 .myCards {
   display: flex;
   flex-direction: row;
@@ -188,6 +208,12 @@ $secondary: #fa5959;
   margin-top: 10%;
 }
 
+.myCards a:hover {
+  background-color: white;
+  color: $primary;
+  border-color: $primary;
+}
+
 .accordion {
   flex-direction: column;
   margin-left: 20em;
@@ -200,12 +226,26 @@ $secondary: #fa5959;
   margin-bottom: 10%;
 }
 
+.accordion-button:hover {
+  color: $secondary;
+}
+
 .myFooter h6 {
   font-weight: lighter;
 }
 
+.myFooter button:hover {
+  background-color: white;
+  color: $secondary;
+  border-color: $secondary;
+}
+
 footer .nav-link {
   color: white;
+}
+
+footer .nav-link:hover {
+  color: $secondary;
 }
 
 footer {
