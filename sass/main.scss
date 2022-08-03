@@ -199,6 +199,29 @@ $secondary: #fa5959;
   align-content: center;
   margin-bottom: 10%;
 }
+
+.myFooter h6 {
+  font-weight: lighter;
+}
+
+footer .nav-link {
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #242946;
+}
+
+footer .contact {
+  margin-left: 30em;
+}
+
+footer img {
+  margin-right: 30px;
+}
+
 /* } */
 
 @media all and (max-width: 720px) {
@@ -325,6 +348,35 @@ $secondary: #fa5959;
     flex-direction: column;
     margin-left: 0em;
     margin-bottom: 5%;
+  }
+
+  .myFooter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .contact {
+    margin-left: 10em;
+  }
+
+  footer img {
+    margin-left: 10px;
+  }
+
+  footer .nav-link {
+    justify-content: center;
+    align-content: center;
+    margin-left: 10em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  footer .navbar-brand {
+    margin-left: 5em;
   }
 }
 
