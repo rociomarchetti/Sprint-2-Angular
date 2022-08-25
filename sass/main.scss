@@ -1,38 +1,17 @@
 $primary: #5265e1;
 $secondary: #fa5959;
 
-/* $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
-) */
-
-/* @include media-breakpoint-between(md, xl) { */
-.container-fluid {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.myNavbar {
-  margin-right: 10%;
-}
-
-.navbar-brand {
-  margin-left: 10%;
-}
-
+//-------> Navbar
 .myNavbar a {
   margin-right: 2em;
 }
 
 .myNavbar a:hover {
-  color: #fa5959;
+  color: $secondary;
 }
 
 .myNavbar button {
-  background-color: #fa5959;
+  background-color: $secondary;
   color: white;
   padding-right: 7%;
   padding-left: 7%;
@@ -40,38 +19,41 @@ $secondary: #fa5959;
 
 .myNavbar button:hover {
   background-color: #ffffff;
-  border-color: #fa5959;
+  border-color: $secondary;
   color: $secondary;
 }
-
+//----------------x
+//-------> Modal
 .modal-body a {
   color: white;
-  padding-top: 2em;
+  padding-bottom: 2em;
   font-size: larger;
-  border-bottom: 2px solid #ffffff;
-}
-
-.modal-body button {
-  color: white;
-  font-size: larger;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  border-color: white;
+  margin-left: 6em;
 }
 
 .modal-content {
   opacity: 95%;
 }
 
-.modal-footer img {
-  padding: 5%;
-  margin-top: 20%;
+.modal-body button {
+  width: 20rem;
 }
 
-.header {
+.modal-footer img {
+  padding: 5%;
+  margin-top: 10%;
+}
+//----------------x
+//-------> Header
+div.header {
   flex-direction: row;
-  max-width: 100%;
-  max-height: 100%;
+}
+
+div.imagen-header {
+  z-index: 3;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 3rem;
 }
 
 .blue-shape {
@@ -86,21 +68,27 @@ $secondary: #fa5959;
   z-index: 1;
 }
 
-.imagen-header {
+div.texto-header {
   z-index: 3;
-  float: right;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.texto-header {
-  z-index: 3;
-  float: left;
+  text-align: left;
+  font-size: larger;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
+div.texto-header p {
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.texto-header h1 {
+  margin-left: 2rem;
+}
+
 .texto-header button {
+  flex-direction: row;
   margin-right: 4%;
 }
 
@@ -109,7 +97,8 @@ $secondary: #fa5959;
   color: $primary;
   border-color: $primary;
 }
-
+//----------------x
+//-------> Nav-tabs
 .nav-tabs {
   border-top: none !important;
   border-right: none;
@@ -192,6 +181,7 @@ $secondary: #fa5959;
 #Features a:hover {
   color: $secondary;
 }
+//----------------x
 
 .myCards {
   display: flex;
@@ -262,37 +252,32 @@ footer img {
   margin-right: 30px;
 }
 
-/* } */
-
-@media all and (max-width: 720px) {
-  .texto-header {
-    display: flex;
-    float: none;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 10%;
-    text-align: center;
-  }
-
-  .texto-header p {
-    text-align: center;
-    /* margin-left: 25rem; */
-  }
-
-  .texto-header.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .texto-header button {
-    margin-left: 5%;
-  }
+.texto-header {
+  display: flex;
+  float: none;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 10%;
+  text-align: center;
 }
 
-@media all and (max-width: 540px) {
+.texto-header p {
+  text-align: center;
+}
+
+.texto-header.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.texto-header button {
+  margin-left: 5%;
+}
+
+ @media (max-width: 767.98px) {
   .header {
     flex-direction: column;
     max-width: 100%;
@@ -300,25 +285,28 @@ footer img {
   }
 
   .ilustracion-header {
-    width: 30rem;
-    justify-content: flex-start;
-    align-content: flex-start;
+    width: 28rem;
   }
 
   .blue-shape {
     height: 15rem;
+    width: 35rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 0%;
   }
 
-  .texto-header {
+  div.texto-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 10%;
+    margin-left: 0%;
   }
 
-  .texto-header p {
+  div.texto-header p {
     text-align: center;
+    width: 20em;
   }
 
   .texto-header.buttons {
@@ -418,6 +406,6 @@ footer img {
   footer .navbar-brand {
     margin-left: 5em;
   }
-}
+} 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
