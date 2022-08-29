@@ -188,6 +188,10 @@ div.myCards {
   border-color: $primary;
 }
 
+//------------------x
+
+//--------> accordion
+
 .accordion {
   flex-direction: column;
   margin-left: 20em;
@@ -285,6 +289,10 @@ footer img {
   .card-3 {
     margin-top: 0%;
     margin: 5%;
+  }
+
+  .accordion {
+    margin-left: 10em;
   }
 }
 
