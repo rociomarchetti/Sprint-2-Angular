@@ -45,6 +45,11 @@ $secondary: #fa5959;
 }
 //----------------x
 //-------> Header
+div.container-fluid {
+  width: 100%;
+  height: 100%;
+}
+
 div.header {
   flex-direction: row;
 }
@@ -115,32 +120,20 @@ div.texto-header p {
   border-bottom: 3px solid $secondary !important;
 }
 
-.features-content {
+div.features-content {
   flex-direction: row;
   width: 100%;
-  max-height: 100%;
+  height: 100%;
 }
 
-.texto-features {
+div.texto-features {
   z-index: 3;
-  float: right;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 2em;
-}
-
-.texto-features h1 {
-  justify-content: flex-start;
 }
 
 .texto-features p {
-  justify-content: flex-start;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-.texto-features.buttons {
-  display: inline-block;
+  text-align: left;
 }
 
 .texto-features button {
@@ -148,24 +141,17 @@ div.texto-header p {
 }
 
 .imagen-features-1 {
-  width: 100%;
   z-index: 3;
-  float: left;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-.tab-1 {
-  z-index: 1;
 }
 
 .blue-shape-features {
   height: 20em;
   width: 35em;
   margin-top: 25%;
-  margin-left: -25%;
-  margin-right: 30%;
-  z-index: 0;
+  margin-left: -35%;
+  z-index: -1;
 }
 
 .tab-2 {
@@ -277,7 +263,7 @@ footer img {
   margin-left: 5%;
 }
 
- @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .header {
     flex-direction: column;
     max-width: 100%;
@@ -331,13 +317,11 @@ footer img {
     font-size: larger;
   }
 
-  .features-content {
-    display: flex;
+  div.features-content {
     flex-direction: column;
   }
 
-  .texto-features {
-    display: flex;
+  div.texto-features {
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -406,6 +390,6 @@ footer img {
   footer .navbar-brand {
     margin-left: 5em;
   }
-} 
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
