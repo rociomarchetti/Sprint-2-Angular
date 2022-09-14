@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sprint 2 - Bootstrap</title>
   <link href="./css/main.min.css" rel="stylesheet"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
 <body>
@@ -156,7 +155,7 @@
         <div class="container-fluid d-flex mt-5 mb-5 features-content">
           <div class="row">
 
-            <div class="container col-12 col-md-6 col-lg-6 order-lg-1 order-md-1
+            <div class="container col-12 col-md-6 col-lg-6 col-xl-6 order-lg-1 order-md-1
             imagen-features-1">
               <img class="position-absolute tab-1" src="./Imagenes/illustration-features-tab-1.svg"
                 alt="List of your favourites sites as they would look in Bookmark" />
@@ -284,18 +283,17 @@
       </div>
     </div>
 
-    <!-- <div class="col-lg-3"></div> -->
-    <div class="accordion d-flex accordion-flush col-12 col-lg-6 col-md-6" id="myAccordion">
+    <div class="accordion accordion-flush col-12 col-lg-6 col-md-6" id="myAccordion">
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="accordionOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
             What is Bookmark?
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="accordionOne"
-          data-bs-parent="myAccordion">
+          data-bs-parent="#myAccordion">
           <div class="accordion-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo dicta, consectetur magnam dolore ipsam
             natus tempora libero tenetur molestias. Iste porro laudantium voluptatibus officiis nostrum earum voluptate
@@ -311,8 +309,8 @@
             How can I request a new browser?
           </button>
         </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="accordionTwo"
-          data-bs-parent="myAccordion">
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="accordionTwo"
+          data-bs-parent="#myAccordion">
           <div class="accordion-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo dicta, consectetur magnam dolore ipsam
             natus tempora libero tenetur molestias. Iste porro laudantium voluptatibus officiis nostrum earum voluptate
@@ -328,6 +326,8 @@
             Is there a mobile app?
           </button>
         </h2>
+      </div>
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -336,9 +336,9 @@
             </button>
           </h2>
         </div>
+
       </div>
     </div>
-    <!-- <div class="col-lg-3"></div> -->
 
   </div>
   <div class="d-flex accordion-btn">
@@ -356,21 +356,16 @@
       <h2 style="margin-bottom: 5%">Stay up-to-date with <br> what we're
         doing</h2>
 
-      <form class="was-validated">
-        <div class="row d-flex justify-content-center">
+      <form class="row d-flex justify-content-center needs-validation" novalidate>
           <div class="col-md-5 col-12">
-            <div class="form-outline form-white mb-4">
-              <input type="email" class="form-control" placeholder="Enter your email address" required />
-              <div class="valid-feedback">Welcome to our newsletter!</div>
+              <input type="email" class="form-control" placeholder="Enter your email address" required/>
               <div class="invalid-feedback">Please enter your email address</div>
-            </div>
           </div>
           <div class="col-auto">
             <button type="submit" class="btn btn-secondary">
               Contact us
             </button>
           </div>
-        </div>
       </form>
       
     </div>
@@ -409,24 +404,14 @@
 
 
 <!-- ----------------------------------------------------------------------------------->
-<!--   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script> -->
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"></script>
 
 </body>
-</html>
+</html> 

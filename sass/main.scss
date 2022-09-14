@@ -1,6 +1,11 @@
 $primary: #5265e1;
 $secondary: #fa5959;
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 //-------> Navbar
 .myNavbar a {
   margin-right: 2em;
@@ -193,8 +198,12 @@ div.myCards {
 //--------> accordion
 
 .accordion {
+  display: flex;
   flex-direction: column;
-  margin-left: 20em;
+  justify-content: center;
+  align-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-bottom: 5%;
 }
 
@@ -207,8 +216,12 @@ div.myCards {
 .accordion-button:hover {
   color: $secondary;
 }
- 
+
 //----------------------x
+
+form .invalid-feedback {
+  color: $secondary;
+}
 
 //-----------footer
 
